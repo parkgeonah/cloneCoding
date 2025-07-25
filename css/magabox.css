@@ -2,3 +2,50 @@
   margin: 0;
   padding: 0;
 }
+header{
+  border: 1px solid black;
+  height: 97px;
+  width: 100%;
+  /* background-color: black; */
+  /* position: absolute; */
+}
+.header-contanier{
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.leftlink{
+  border: 1px solid black;
+  margin-left: 200px;
+  float: left;
+  font-size: 13.5px;
+  font: 400;
+  line-height: 19px;
+  /* position: absolute; */
+}
+.rightlink{
+  border: 1px solid black;
+  margin-right: 200px;
+  float: right;
+  font-size: 13.5px;
+  font: 400;
+  line-height: 19px;
+  /* position: absolute; */
+}
+.hidden-menu{
+  border: 1px solid black;
+  display: block;
+}
+li{
+  list-style: none;
+}
+.hidden-list{
+
+}
+nav{
+  border: 1px solid black;
+  display: block;
+}
+.dropdown{
+  display: flex;
+}
