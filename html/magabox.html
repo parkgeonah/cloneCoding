@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MAGABOX 클론코딩</title>
-  <link rel="stylesheet" href="./../css\magabox.css">
+  <link rel="stylesheet" href="./../css/magabox.css">
 </head>
 <body>
   <header id="header">
@@ -24,7 +24,6 @@
           <a href="">빠른예매</a>
         </div>
       </div> <!-- 위쪽 링크 끝 -->
-
         <nav> <!-- nav영역 시작-->
           <div class="nav-left"> <!-- 네비 왼쪽 -->
           <div class="sitemap-container"><!--SITEMPA 컨테이너-->
@@ -238,36 +237,182 @@
         </nav>
     </div>
   </header> <!--헤더 끝-->
-  <main><!--메인 시작-->
-    <div>
-      <section class="box-office">
+  <main class="main"><!--메인 시작-->
+    <div class="main-container">
+      <section class="box-office"><!--section1 시작-->
         <div>
         <h4>박스오피스</h4>
+        <a href="">더 많은 영화보기 +</a>
         <ol>
           <li class="movie-poster">
             <a href="">
               <img src="./../img/zombe.jpg" alt="좀비딸">
             </a>
+            <div class="button-container">
               <div class="empathy-button">
-                <button>
+                <button class="button-box">
                   <img src="./../img/empathy_button.png" alt="공감버튼">
+                  800
                 </button>
               </div>
+              <div class="booking">
+                <a href="" class="booking">예매</a>
+              </div>
+            </div>  
           </li>
           <li class="movie-poster">
+            <a href="">
             <img src="./../img/f1.jpg" alt="f1 더무비">
+            </a>
+          <div class="button-container">
+              <div class="empathy-button">
+                <button class="button-box">
+                  <img src="./../img/empathy_button.png" alt="공감버튼">
+                  2.1k
+                </button >
+              </div>
+              <div class="booking">  
+                <a href="" class="booking">예매</a>
+              </div>
+          </div>
           </li>
           <li class="movie-poster">
+            <a href="">
             <img src="./../img/movie.jpg" alt="전지적 독자 시점">
+            </a>
+          <div class="button-container">
+              <div class="empathy-button">
+                <button class="button-box">
+                  <img src="./../img/empathy_button.png" alt="공감버튼">
+                  1.2k
+                </button>
+              </div>
+              <div class="booking">  
+              <a href="" class="booking">예매</a>
+              </div>
+          </div>    
           </li>
           <li class="movie-poster">
+            <a href="" class="poster-a">
             <img src="./../img/fantastic4.jpg" alt="판타스틱4">
+            </a>
+          <div class="button-container"> 
+              <div class="empathy-button">
+                <button class="button-box">
+                  <img src="./../img/empathy_button.png" alt="공감버튼">
+                  532
+                </button>
+              </div>
+              <div class="booking">  
+                <a href="" class="booking">예매</a>
+              </div>
+          </div>    
           </li>
         </ol>
+        <div class="search-link">
+          <div class="cell">
+            <div class="search">
+              <input type="text" placeholder="영화명을 입력해 주세요">
+              <button><img src="./../img/search.png" alt="검색"></button>
+            </div>
+          </div>
+          <div class="cell">
+            <a href="">
+              <img src="./../img/calenda.png" alt="">
+              상영시간표
+            </a>
+          </div>
+          <div class="cell">
+            <a href="">
+              <img src="./../img/boxoffice.png" alt="">
+              박스오피스
+            </a>
+          </div>
+          <div class="cell">
+            <a href="">
+              <img src="./../img/ticket.png" alt="">
+              빠른 예매
+            </a>
+          </div>
+        </div>
+          <div class="mouses">
+            <img src="./../img/mouses.png" alt="">
+          </div>
         </div>  
-      </section>
-      <section>
-
+      </section><!--section1 끝-->
+      <section class="curation"> <!--secrion2 시작-->
+        <div class="curation-area">
+          <div class="curation-header">
+            <h2>큐레이션</h2>
+            <div class="curation-rigth">
+              <a href="">큐레이션 더보기 +</a>
+            </div>
+          </div>
+          <div class="curation-main">
+            <div>
+              <a href="">
+                <img src="./../img/Relocation.jpg" alt="">
+              </a>
+            </div>
+          
+            <div class="textbox-area">
+              <div class="textbox">
+                <p class="textbox-id">
+                  #
+                  <span>필름소사이어티</span>
+                </p>
+                <p class="textbox-title">이사</p> <br>
+                <p class="textbox-content">
+                  화목한 가정을 자부하던 6학년 소녀 렌<br>
+                  <br>
+                  어느 날 아빠가 집을 나가고 엄마가 이혼을 선언했다<br>
+                  <br>
+                  "나는 엄마 아빠가 싸워도 참았어
+                  <br>
+                  근데 왜 엄마 아빠는 못 참는 거야?" <br>
+                  <br>
+                  엄마가 만든 '둘을 위한 계약서'도 싫고
+                </p>
+              </div>
+          </div>    
+          </div>  
+          <div class="curation-list">
+            <ul>
+              <li>
+                <a href="">
+                <div class="list-content">
+                  <img src="./../img/Miséricorde.jpg" alt="">
+                </div>
+                <p>미세리 코르디아</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div>
+                    <img src="./../img/Swallowtail_Butterfl.jpg" alt="">
+                  </div>
+                  <p>스왈로우테일 버터플라이</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div>
+                    <img src="./../img/Van_Gogh_Under_the_Clouded_Sky.jpg" alt="">
+                  </div>
+                  <p>반 고흐.밀밭과 구름 낀 하늘</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div>
+                    <img src="./../img/happyend.jpg" alt="">
+                  </div>
+                  <p>해피 엔드</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
   </main>
