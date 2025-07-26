@@ -1,51 +1,206 @@
-*{
+/* 공통 레이아웃 */
+*{  
   margin: 0;
   padding: 0;
 }
-header{
-  border: 1px solid black;
-  height: 97px;
-  width: 100%;
-  /* background-color: black; */
-  /* position: absolute; */
+a {
+  text-decoration: none;
+  color: gray;
 }
-.header-contanier{
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-between;
+p{
+  color: white;
 }
-.leftlink{
-  border: 1px solid black;
-  margin-left: 200px;
-  float: left;
-  font-size: 13.5px;
-  font: 400;
-  line-height: 19px;
-  /* position: absolute; */
-}
-.rightlink{
-  border: 1px solid black;
-  margin-right: 200px;
-  float: right;
-  font-size: 13.5px;
-  font: 400;
-  line-height: 19px;
-  /* position: absolute; */
-}
-.hidden-menu{
-  border: 1px solid black;
-  display: block;
-}
-li{
+ul, li {
   list-style: none;
 }
-.hidden-list{
+/* body레이아웃  */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: white;
+  color: rgb(57, 57, 57);
+}
+/* header */
+header {
+  background-color: rgb(18, 17, 17);
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 1000;
+  margin: auto;
+}
+
+.header-container {
+  width: 100%;
+}
+
+/* 헤더 링크영역 */
+.link-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 40px;
+  font-size: 12px;
+}
+
+.leftlink a,
+.rightlink a {
+  margin: 0 6px;
+  color: #999;
+}
+.leftlink a:hover,
+.rightlink a:hover {
+  text-decoration: underline grey;
 
 }
-nav{
-  border: 1px solid black;
+
+/* 로고 */
+.link-area h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  
+}
+.link-area h1 img {
+  height: 50px;
+}
+
+/* nav영역 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: black;
+  height: 70px; 
+  color: white; 
+}
+.nav-left, .nav-right {
+  display: flex;
+  gap: 50px; 
+  align-items: center;
+}
+
+
+
+/* 사이트맵 부분 */
+.sitemap-container {
+  /* background-color: rgb(36, 36, 36); */
+  padding: 10px;
+  float: left;
+}
+.sitemap-drop {
+  position: relative;
+  
+}
+.sitemap-menu p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  
+}
+.sitemap-drop a{
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px 0;
+}
+.sitemap-drop div{
+  display: none;
+  background-color: rgb(36, 36, 36);
+  padding: 20px;
+  border: 1px solid rgb(188, 186, 186);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 1400px;
+  z-index: 1000;
+}
+.sitemap-drop:hover div {
   display: block;
 }
+.sitemap-menu {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+}
+.sitemap-content {
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+  color: rgb(57, 57, 57);
+}
+.sitemap-content:hover {
+  color: rgb(60, 60, 240);
+}
+
+/* 드롭다운 영역 */
 .dropdown{
   display: flex;
+  gap: 70px;
+  align-items: center;
+}
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu div {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -150px;
+  background-color: rgb(18, 17, 17);
+  padding: 10px 20px;
+  white-space: nowrap;
+  z-index: 100;
+}
+.dropdown-menu div ul {
+  display: flex;
+  gap: 50px;
+  
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.dropdown-menu:hover div {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+.dropdown-menu a img button{
+  width: 40px;
+  height: 50px;
+  font-size: 16px;
+  padding: 15px;
+}
+
+/* main */
+main{
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+  background-color: #999;
+}
+.section{
+  border: 1px solid black;
+}
+section h4{
+  display: inline-block;
+  align-items: center;
+  top: 200px;
+  padding-left: 48%;
+}
+.movie-poster{
+  display: inline-block;
+  margin: 20px;
+  align-items: center;
+  padding: 20px;
+}
+.empathy-button img{
+  height: 100%;
+  width: 100%;
 }
