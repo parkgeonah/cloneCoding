@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./../css/magabox.css">
 </head>
 <body>
+  <div class="header--main-container">
   <header id="header">
     <div class="header-container"> <!-- 위쪽 링크 -->
       <div class="link-area">
@@ -16,7 +17,7 @@
           <a href="">고객센터</a>
         </div>
         <h1>
-          <a href=""><img src="./../img\magabox_logo.jpg" alt="magabox_logo"></a> 
+          <a href=""><img src="./../img/logo-white_new2.png" alt="magabox_logo"></a> 
         </h1> 
         <div class="right-link">
           <a href="">로그인</a>
@@ -29,7 +30,8 @@
           <div class="sitemap-container"><!--SITEMPA 컨테이너-->
             <ul>
               <!-- <button> -->
-                <li class="sitemap-drop">사이트맵
+                <li class="sitemap-drop">
+                  <img src="./../img/ico-sitemap-white.png" alt="">
               <!-- </button> -->
                   <a href=""></a>
                   <div>
@@ -143,6 +145,9 @@
             </ul>
           </div> <!-- SITEMAP 컨테이너 끝-->
           <ul class="dropdown">
+            <li class="droopdown-menu">
+              <a href=""><img src="./../img/ico-search-white.png" alt=""></a>
+            </li>
             <li class="dropdown-menu">
               <a href="">영화</a>
               <div>
@@ -220,7 +225,12 @@
             </li>
             <li class="dropdown-menu">
               <a href="">
-                <img src="./../img/cenicon.png" alt="내정보">
+                <img src="./../img/ico-schedule-white.png" alt="">
+              </a>
+            </li>
+            <li class="dropdown-menu">
+              <a href="">
+                <img src="./../img/ico-mymega-white.png" alt="내정보">
               </a>
               <div>
                 <ul>
@@ -241,8 +251,12 @@
     <div class="main-container">
       <section class="box-office"><!--section1 시작-->
         <div>
+        <div class="header-box-office">
         <h4>박스오피스</h4>
-        <a href="">더 많은 영화보기 +</a>
+        <a href="">더 많은 영화보기
+          <img src="./../img/ico-more-cross-gray.png" alt="">
+        </a>
+        </div>
         <ol>
           <li class="movie-poster">
             <a href="">
@@ -313,34 +327,35 @@
           <div class="cell">
             <div class="search">
               <input type="text" placeholder="영화명을 입력해 주세요">
-              <button><img src="./../img/search.png" alt="검색"></button>
+              <button><img src="./../img/ico-search-white (1).png" alt="검색"></button>
             </div>
           </div>
           <div class="cell">
             <a href="">
-              <img src="./../img/calenda.png" alt="">
+              <img src="./../img/ico-schedule-white.png" alt="">
               상영시간표
             </a>
           </div>
           <div class="cell">
             <a href="">
-              <img src="./../img/boxoffice.png" alt="">
+              <img src="./../img/ico-boxoffice-main.png" alt="">
               박스오피스
             </a>
           </div>
           <div class="cell">
             <a href="">
-              <img src="./../img/ticket.png" alt="">
+              <img src="./../img/ico-quick-reserve-main.png" alt="">
               빠른 예매
             </a>
           </div>
         </div>
           <div class="mouses">
-            <img src="./../img/mouses.png" alt="">
+            <img src="./../img/ico-mouse.png" alt="">
           </div>
         </div>  
       </section><!--section1 끝-->
-      <section class="curation"> <!--secrion2 시작-->
+    </div>  
+      <section class="curation"> <!--section2 시작-->
         <div class="curation-area">
           <div class="curation-header">
             <h2>큐레이션</h2>
@@ -354,7 +369,6 @@
                 <img src="./../img/Relocation.jpg" alt="">
               </a>
             </div>
-          
             <div class="textbox-area">
               <div class="textbox">
                 <p class="textbox-id">
@@ -373,56 +387,175 @@
                   <br>
                   엄마가 만든 '둘을 위한 계약서'도 싫고
                 </p>
+              </div> 
+            <div class="curation-list">
+              <ul>
+                <li>
+                  <a href="">
+                  <div class="list-content">
+                    <img src="./../img/Miséricorde.jpg" alt="">
+                  </div>
+                  <p>미세리 코르디아</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      <img src="./../img/Swallowtail_Butterfl.jpg" alt="">
+                    </div>
+                    <p>스왈로우테일 버터플라이</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      <img src="./../img/Van_Gogh_Under_the_Clouded_Sky.jpg" alt="">
+                    </div>
+                    <p>반 고흐.밀밭과 구름 낀 하늘</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      <img src="./../img/happyend.jpg" alt="">
+                    </div>
+                    <p>해피 엔드</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </div>    
+      </section> <!--section2 끝-->
+      <section class="sliding-section"> <!-- section3 시작 -->
+        <div class="section3-container">
+          <h2>메가박스 안내</h2>
+          <div class="sliding-content">
+            <div class="sliding-img">
+              <a href="">
+                <img src="./../img/banner_01.jpg" alt="">
+              </a>
+            </div>
+            <div class="sliding-img">
+              <a href="">
+                <img src="./../img/bg-main-dva.png" alt="">
+              </a>
+            </div>
+            <div class="sliding-img">
+              <a href="">
+                <img src="./../img/bg-main-mx4d.png" alt="">
+              </a>
+            </div>
+            <div class="sliding-img">
+              <a href="">
+                <img src="./../img/bg-main-dolbyatmos.png" alt="">
+              </a>
+            </div>
+            <div class="sliding-img">
+              <a href="">
+                <img src="./../img/bg-main-led.png" alt="">
+              </a>
+            </div>
+            <div class="sliding-img">
+              <a href="">
+                <img src="./../img/bg-main-private.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="notice">
+            <p class="notice-title">메가박스</p>
+            <p class="notice-link"><a href="">
+              <strong>[공지]</strong>
+            2025 [발레리나] 빵원티켓플러스 일정 변경 안내</a>
+          </p>
+            <p class="notice-date">2025.07.25</p>
+            <p class="notice-more">
+              <a href="">더보기
+              <img src="./../img/ico-arr-right-gray.png" alt="">
+            </a></p>
+          </div>
+          <div class="info-link">
+            <div class="info-table">
+              <div class="info-cell">
+                <img src="./../img/ico-main-customer.png" alt="고객센터">
+                <a href="">고객센터</a>
               </div>
-          </div>    
-          </div>  
-          <div class="curation-list">
-            <ul>
-              <li>
-                <a href="">
-                <div class="list-content">
-                  <img src="./../img/Miséricorde.jpg" alt="">
-                </div>
-                <p>미세리 코르디아</p>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div>
-                    <img src="./../img/Swallowtail_Butterfl.jpg" alt="">
-                  </div>
-                  <p>스왈로우테일 버터플라이</p>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div>
-                    <img src="./../img/Van_Gogh_Under_the_Clouded_Sky.jpg" alt="">
-                  </div>
-                  <p>반 고흐.밀밭과 구름 낀 하늘</p>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div>
-                    <img src="./../img/happyend.jpg" alt="">
-                  </div>
-                  <p>해피 엔드</p>
-                </a>
-              </li>
-            </ul>
+              <div class="info-cell">
+                <img src="./../img/ico-main-qna.png" alt="자주 묻는 질문">
+                <a href="">자주 묻는 질문</a>
+              </div>
+              <div class="info-cell">
+                <img src="./../img/ico-main-faq.png" alt="">
+                <a href="">1:1 문의</a>
+              </div>
+              <div class="info-cell">
+                <img src="./../img/ico-main-group.png" alt="">
+                <a href="">단체/대관문의</a>
+              </div>
+              <div class="info-cell">
+                <img src="./../img/ico-main-lost.png" alt="">
+                <a href="">분실물 문의/접수</a>
+              </div>
+              <div class="info-cell">
+                <img src="./../img/ico-main-boutique.png" alt="">
+                <a href="">더 부티크 프라이빗<br>대관예매</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
   </main>
-  <div>
-
-  </div>
 <footer>
-  <div>
+  <div class="footer-container">
+  <div class="footer-top">
+    <div class="top-inner">
+      <ul class="fnb">
+        <li><a href="">회사소개</a></li>
+        <li><a href="">인재채용</a></li>
+        <li><a href="">사회공헌</a></li>
+        <li><a href="">제휴/광고/부대사업문의</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href=""><strong>위치기반서비스 이용약관</strong></a></li>
+        <li><a href=""><strong>개인정보처리방침</strong></a></li>
+        <li><a href="">윤리경영</a></li>
+      </ul>
+      <div class="footer-search">
+      <a href="">
+        <img src="./../img/ico-footer-search.png" alt="">
+        극장찾기
+      </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+  <div class="footer-bottom-inner">
+    <!-- 왼쪽: 로고 -->
+    <div class="footer-logo">
+      <img src="./../img/logo-opacity_new2.png" alt="MEGABOX 로고">
+    </div>
 
+    <!-- 가운데: 회사 정보 텍스트 -->
+    <div class="footer-info">
+      <p>서울특별시 강남구 테헤란로 87길 22 도심공항타워 6층 408호
+      ARS 1544-0070 대표이메일 m.dreamcenter@partner.megabox.co.kr</p>
+      <p>대표자명 홍정인, 남웅석 · 개인정보보호책임자 김수현
+      사업자등록번호 211-86-59478 · 통신판매업신고번호 2025-서울강남-00722</p>
+      <p>COPYRIGHT ⓒ MegaboxJoongAng, Inc. All rights reserved</p>
+    </div>
+
+    <!-- 오른쪽: SNS 아이콘 -->
+    <div class="footer-sns">
+      <img src="./../img/ico-youtubeN.png" alt="YouTube">
+      <img src="./../img/ico-instagramN.png" alt="Instagram">
+      <img src="./../img/ico-facebookN.png" alt="Facebook">
+      <img src="./../img/ico-twitterN.png" alt="Twitter">
+    </div>
+  </div>
+</div>
   </div>
 </footer>
+</div>
 </body>
 </html>
