@@ -2,10 +2,8 @@
 *{  
   margin: 0;
   padding: 0;
-  /* background-color: pink; */
 }
 .full-container{
-  /* max-width: auo; */
   margin: auto;
 }
 a {
@@ -13,27 +11,23 @@ a {
   color: gray;
 }
 
-p{
-  /* color: white; */
-}
 ul, li {
   list-style: none;
 }
+
 /* body레이아웃  */
 body {
-  font-family: 'Noto Sans KR', sans-serif;
   /* color: rgb(57, 57, 57); */
   width: 100%;
   height: 100%;
 }
 /* header */
 header {
-  background-color: rgb(18, 17, 17);
-  border-bottom: 1px solid rgb(152, 148, 148);
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(238, 236, 236);
   position: relative;
   z-index: 1000;
   margin: auto;
-  filter: 20px;
 }
 
 .header-container {
@@ -51,15 +45,19 @@ header {
 .left-link a,
 .right-link a {
   margin: 0 6px;
-  color: gray;
-  text-decoration: underline grey;
+  color: rgb(240, 239, 239);
+
 }
 
+.left-link a:hover,
+.right-link a:hover{
+  text-decoration: underline gray;
+}
 /* 로고 */
 .link-area h1 {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); /* 로고 위치조정 */
+  transform: translateX(-50%); 
   top: 10px;
   
 }
@@ -88,7 +86,6 @@ nav {
 .sitemap-container {
   /* background-color: rgb(36, 36, 36); */
   padding: 10px;
-  float: left;
 }
 .sitemap-drop {
   position: relative;
@@ -102,19 +99,17 @@ nav {
 }
 .sitemap-drop a{
   font-weight: bold;
-  display: inline-block;
   margin: 10px 0;
 }
 .sitemap-drop div{
   display: none;
-  background-color: rgba(36, 36, 36, 0.923);
+  background-color: rgb(96, 94, 94);
   padding: 20px;
   border: 1px solid rgb(188, 186, 186);
   position: absolute;
   top: 30px;
   left: 0;
   width: 1400px;
-  z-index: 1000;
 }
 .sitemap-drop:hover div {
   display: block;
@@ -128,7 +123,7 @@ nav {
   display: block;
   margin: 5px 0;
   font-size: 14px;
-  color: rgb(57, 57, 57);
+  color: rgb(234, 234, 234);
 }
 .sitemap-content:hover {
   color: rgb(60, 60, 240);
@@ -140,9 +135,10 @@ nav {
   gap: 70px;
   align-items: center;
 }
+
 .dropdown-menu {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .dropdown-menu div {
@@ -150,7 +146,7 @@ nav {
   position: absolute;
   top: 100%;
   left: -150px;
-  background-color: rgb(18, 17, 17);
+  background-color: rgb(8, 8, 8);
   padding: 10px 20px;
   white-space: nowrap;
   z-index: 100;
@@ -161,7 +157,7 @@ nav {
   
 }
 
-.dropdown-content a {
+.dropdown-content-a {
   color: white;
   text-decoration: none;
   font-size: 14px;
@@ -174,23 +170,14 @@ nav {
 .dropdown-content a:hover {
   text-decoration: underline;
 }
-.dropdown-menu a img button{
-  width: 40px;
-  height: 50px;
-  font-size: 16px;
-  padding: 15px;
-}
 
 /* main */
-main{
-  /* border: 1px solid black; */
-}
 main div{
   margin: 0 auto;
   /* padding: 20px 10px; */
   font-family: 'Noto Sans KR', sans-serif;
   color: white;
-  /* background: rgb(31, 30, 30); */
+  /* background: rgba(11, 11, 11, 0.808); */
 
 }
 
@@ -198,7 +185,7 @@ main div{
 .box-office {
   margin-bottom: 40px;
   width: 100%;
-  background: rgb(31, 30, 30)
+  background: rgb(0, 0, 0)
 }
 .header-box-office{
   display: flex;
@@ -212,14 +199,14 @@ main div{
   font-weight: 600;
   margin-bottom: 16px;
   text-align: center;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid rgb(233, 231, 231);
   padding-bottom: 6px;
   margin-left: 690px;
 }
 .box-office ol {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   padding: 20px;
   margin: 20px;
   list-style: none;
@@ -236,6 +223,7 @@ main div{
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
+  /* padding-bottom: 25px; */
 }
 
 
@@ -280,7 +268,7 @@ main div{
 .booking{
   width: 150%;
   height: 36px; 
-  background-color: rgb(46, 155, 198);
+  background-color: rgb(199, 42, 42);
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -337,7 +325,7 @@ main div{
   outline: none;
   color: white;
   padding: 4px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .search-link .search button {
@@ -352,7 +340,9 @@ main div{
   margin-top: 50px;
   width: 20px;
   height: 20px;
+  padding-bottom: 50px;
 }
+
 /* section 2 큐레이션 */
 .curation {
   padding: 40px 20px;
@@ -465,7 +455,7 @@ main div{
   width: 100%;
   display: block;
   border-radius: 8px;
-  transition: transform 0.3s;
+  transition: 0.3s;
 }
 
 .sliding-img img:hover {
@@ -508,6 +498,9 @@ main div{
   padding: 5px 5px;
   border-left: 1px solid grey;
 }
+.notice-link:hover{
+  text-decoration: underline gray;
+}
 
 /* info 부분 */
 .info-table {
@@ -520,13 +513,13 @@ main div{
 }
 
 .info-cell {
-  flex: 1 1 140px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 14px;
-  color: #333;
-  transition: all 0.3s;
+  color: grey;
+  transition: 0.3s;
 }
 
 .info-cell img {
@@ -536,7 +529,7 @@ main div{
 
 .info-cell:hover {
   transform: translateY(-5px);
-  color: #01738b;
+  color: rgb(32, 138, 180);
 }
 
 /* 푸터영역 */
@@ -572,14 +565,14 @@ footer {
 .fnb a {
   text-decoration: none;
   color: rgba(128, 128, 128, 0.921);
-  font-weight: 400;
+  font-weight: 400px;
 }
 .fnb a:hover {
-  color: #01738b;
+  color: black;
   text-decoration: underline;
 }
 
-/* 푸터 검색창 */
+/* 푸터 극장찾기 */
 .footer-search {
   display: flex;
   align-items: center;
@@ -636,3 +629,6 @@ footer {
   opacity: 0.6;
 }
 
+.footer-sns img:hover {
+  transform: scale(1.2);
+}
